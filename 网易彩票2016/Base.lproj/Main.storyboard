@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="msyh.ttf">
+            <string>MicrosoftYaHei</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="A4E-49-P7y">
@@ -33,7 +38,7 @@
         <!--首页-->
         <scene sceneID="RCC-Yg-Ygw">
             <objects>
-                <tableViewController title="首页" id="grI-rd-F9K" sceneMemberID="viewController">
+                <tableViewController title="首页" id="grI-rd-F9K" customClass="WSHallViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="U3V-Rn-erZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +48,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qms-RF-cz7" id="4Ll-XS-SU8">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -53,18 +58,55 @@
                             <outlet property="delegate" destination="grI-rd-F9K" id="V7z-rp-tzL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="购彩大厅" id="Xfq-QV-S2T"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="Xfq-QV-S2T">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6xk-p6-9bj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Ha-ce-HLx">
+                                <rect key="frame" x="310" y="11" width="49" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="6" minY="-2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="咨询" image="zixunBarFlat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sEX-cf-uUM" kind="push" id="US0-OK-7qV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQZ-KU-j0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="82" y="-2639"/>
         </scene>
-        <!--首页-导航-->
+        <!--View Controller-->
+        <scene sceneID="UAx-FO-mxY">
+            <objects>
+                <viewController id="sEX-cf-uUM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PTU-Wb-8ax"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrr-yr-pYL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xwi-rr-GQe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jiQ-5u-Nkc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hm6-69-rW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="-2640"/>
+        </scene>
+        <!--购彩大厅-N-->
         <scene sceneID="fea-Ee-Z0P">
             <objects>
-                <navigationController title="首页-导航" id="fbC-zN-20g" sceneMemberID="viewController">
+                <navigationController title="购彩大厅-N" id="fbC-zN-20g" customClass="WSNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="R5t-Yr-DZH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VAx-aw-jA4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VAx-aw-jA4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -89,7 +131,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YOK-yM-dkZ" id="cTh-Xf-gex">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -108,9 +150,9 @@
         <!--合买跟单-N-->
         <scene sceneID="LXf-fB-gjp">
             <objects>
-                <navigationController title="合买跟单-N" id="fjZ-W9-lv8" sceneMemberID="viewController">
+                <navigationController title="合买跟单-N" id="fjZ-W9-lv8" customClass="WSNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="f8Q-ey-ZOO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e0f-Ts-1zx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e0f-Ts-1zx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -135,7 +177,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qps-LR-gYw" id="3hg-Wo-wH3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -154,9 +196,9 @@
         <!--幸运选号-N-->
         <scene sceneID="gTG-3J-aZB">
             <objects>
-                <navigationController title="幸运选号-N" id="1mL-UK-r4j" sceneMemberID="viewController">
+                <navigationController title="幸运选号-N" id="1mL-UK-r4j" customClass="WSNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="mlN-Ie-6WM"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C4n-X9-36A">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="C4n-X9-36A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -181,7 +223,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V7d-Lh-NVr" id="L2v-A5-REZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -200,9 +242,9 @@
         <!--开奖信息-N-->
         <scene sceneID="rD5-iI-oYD">
             <objects>
-                <navigationController title="开奖信息-N" id="muj-yb-En5" sceneMemberID="viewController">
+                <navigationController title="开奖信息-N" id="muj-yb-En5" customClass="WSNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dnT-Ov-tsm"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xYd-vR-l20">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xYd-vR-l20">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -227,7 +269,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HaS-Eu-F7T" id="12a-OE-nMS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -246,9 +288,9 @@
         <!--我的彩票-N-->
         <scene sceneID="7EF-lD-0Jh">
             <objects>
-                <navigationController title="我的彩票-N" id="FIK-jH-3X4" sceneMemberID="viewController">
+                <navigationController title="我的彩票-N" id="FIK-jH-3X4" customClass="WSNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="LhH-7N-VhV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xAt-NH-8uq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xAt-NH-8uq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -261,6 +303,9 @@
             <point key="canvasLocation" x="-380" y="425"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="zixunBarFlat" width="13" height="11"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

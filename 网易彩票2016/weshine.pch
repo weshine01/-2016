@@ -1,0 +1,40 @@
+//
+//  weshine.pch
+//  项目名称
+//
+//  Created by user on 2016/12/15.
+//  Copyright © 2016年 王韦翔. All rights reserved.
+//
+
+#ifndef weshine_pch
+#define weshine_pch
+
+// Build Settings -> 搜索prefix header
+// $(SRCROOT)/项目名称/weshine.pch
+
+
+//======== universal ========
+
+//--------------------------
+// 自定义log ...为可变参数，__func__打印类名和方法名，__LINE__打印行号
+#ifdef DEBUG
+#define WSLog(...) NSLog(@"%s  %d \n    %@ \n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define WSLog(...)
+#endif
+//--------------------------
+
+
+
+//======== particular ========
+#define WSFontSize(s) [UIFont fontWithName:@"MicrosoftYaHei" size:s]
+
+
+
+
+
+
+
+
+
+#endif /* weshine_pch */
