@@ -121,7 +121,7 @@
         <!--合买跟单-->
         <scene sceneID="Pck-Aj-1dF">
             <objects>
-                <tableViewController title="合买跟单" id="wd1-Ds-BVL" sceneMemberID="viewController">
+                <tableViewController title="合买跟单" id="wd1-Ds-BVL" customClass="WSDocumentaryController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="phT-cU-Q54">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,20 @@
                             <outlet property="delegate" destination="wd1-Ds-BVL" id="i2n-8D-Q81"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="合买跟单" id="up2-j7-LVR"/>
+                    <navigationItem key="navigationItem" id="up2-j7-LVR">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dAj-8G-7kp" customClass="WSTitleButton">
+                            <rect key="frame" x="128" y="11" width="120" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="16"/>
+                            <state key="normal" title="全部彩种" image="YellowDownArrow">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="titleBtnClick:" destination="wd1-Ds-BVL" eventType="touchUpInside" id="zV5-1a-WWg"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZL-qi-gmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +317,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

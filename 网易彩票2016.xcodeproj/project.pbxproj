@@ -53,6 +53,8 @@
 		CEAD772E1E0294B20024E31C /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = CEAD770F1E0294B20024E31C /* znzh.html */; };
 		CEAD772F1E0294B20024E31C /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEAD77101E0294B20024E31C /* msyh.ttf */; };
 		CEAD77301E0294B20024E31C /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAD77111E0294B20024E31C /* settings.plist */; };
+		CEAD77331E02BAEE0024E31C /* WSDocumentaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD77321E02BAEE0024E31C /* WSDocumentaryController.m */; };
+		CEAD77361E02BC5F0024E31C /* WSTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD77351E02BC5F0024E31C /* WSTitleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +115,10 @@
 		CEAD770F1E0294B20024E31C /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
 		CEAD77101E0294B20024E31C /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
 		CEAD77111E0294B20024E31C /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		CEAD77311E02BAEE0024E31C /* WSDocumentaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDocumentaryController.h; sourceTree = "<group>"; };
+		CEAD77321E02BAEE0024E31C /* WSDocumentaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDocumentaryController.m; sourceTree = "<group>"; };
+		CEAD77341E02BC5F0024E31C /* WSTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTitleButton.h; sourceTree = "<group>"; };
+		CEAD77351E02BC5F0024E31C /* WSTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTitleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,9 +191,9 @@
 		CE2F3B811E00F8BB00276A00 /* 合买跟单 */ = {
 			isa = PBXGroup;
 			children = (
-				CE2F3B821E00F8BB00276A00 /* Controller */,
 				CE2F3B831E00F8BB00276A00 /* Model */,
 				CE2F3B841E00F8BB00276A00 /* View */,
+				CE2F3B821E00F8BB00276A00 /* Controller */,
 			);
 			path = "合买跟单";
 			sourceTree = "<group>";
@@ -195,6 +201,8 @@
 		CE2F3B821E00F8BB00276A00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CEAD77311E02BAEE0024E31C /* WSDocumentaryController.h */,
+				CEAD77321E02BAEE0024E31C /* WSDocumentaryController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +217,8 @@
 		CE2F3B841E00F8BB00276A00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEAD77341E02BC5F0024E31C /* WSTitleButton.h */,
+				CEAD77351E02BC5F0024E31C /* WSTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,7 +567,9 @@
 				CEAD76E01E02464E0024E31C /* WSNavigationController.m in Sources */,
 				CE2F3B6E1E00F14A00276A00 /* AppDelegate.m in Sources */,
 				CE0635EA1E01636E00FE5032 /* WSTabBarButton.m in Sources */,
+				CEAD77361E02BC5F0024E31C /* WSTitleButton.m in Sources */,
 				CE2F3B6B1E00F14A00276A00 /* main.m in Sources */,
+				CEAD77331E02BAEE0024E31C /* WSDocumentaryController.m in Sources */,
 				CEAD76E31E028F5F0024E31C /* WSHallViewController.m in Sources */,
 				CE0635E71E01454F00FE5032 /* WSTabBar.m in Sources */,
 			);
