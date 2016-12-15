@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="A4E-49-P7y">
             <objects>
-                <tabBarController id="sFr-gW-hTh" sceneMemberID="viewController">
+                <tabBarController id="sFr-gW-hTh" customClass="WSTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="txg-jb-m5v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qms-RF-cz7" id="4Ll-XS-SU8">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -53,7 +53,7 @@
                             <outlet property="delegate" destination="grI-rd-F9K" id="V7z-rp-tzL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Xfq-QV-S2T"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="Xfq-QV-S2T"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQZ-KU-j0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +89,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YOK-yM-dkZ" id="cTh-Xf-gex">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -99,7 +99,7 @@
                             <outlet property="delegate" destination="wd1-Ds-BVL" id="i2n-8D-Q81"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="up2-j7-LVR"/>
+                    <navigationItem key="navigationItem" title="合买跟单" id="up2-j7-LVR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZL-qi-gmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qps-LR-gYw" id="3hg-Wo-wH3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -145,7 +145,7 @@
                             <outlet property="delegate" destination="Mb7-pO-EOv" id="NMs-S1-RNS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vcq-al-idv"/>
+                    <navigationItem key="navigationItem" title="幸运选号" id="vcq-al-idv" userLabel="幸运选号"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTN-v3-TpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V7d-Lh-NVr" id="L2v-A5-REZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -191,7 +191,7 @@
                             <outlet property="delegate" destination="m2a-kK-JHC" id="8Hg-0G-dxF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="3hW-Fp-tww"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="3hW-Fp-tww"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYl-DF-nPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +227,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HaS-Eu-F7T" id="12a-OE-nMS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -237,7 +237,7 @@
                             <outlet property="delegate" destination="dEi-wh-Wl6" id="SIF-9o-AAe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="8eb-Nj-R8c"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="8eb-Nj-R8c"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dr8-Ny-Cir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

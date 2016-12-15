@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0635E21E01433200FE5032 /* WSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0635E11E01433200FE5032 /* WSTabBarController.m */; };
+		CE0635E71E01454F00FE5032 /* WSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0635E61E01454F00FE5032 /* WSTabBar.m */; };
+		CE0635EA1E01636E00FE5032 /* WSTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0635E91E01636E00FE5032 /* WSTabBarButton.m */; };
 		CE2F3B6B1E00F14A00276A00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3B6A1E00F14A00276A00 /* main.m */; };
 		CE2F3B6E1E00F14A00276A00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3B6D1E00F14A00276A00 /* AppDelegate.m */; };
-		CE2F3B711E00F14A00276A00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3B701E00F14A00276A00 /* ViewController.m */; };
 		CE2F3B741E00F14A00276A00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2F3B721E00F14A00276A00 /* Main.storyboard */; };
 		CE2F3B9D1E01087C00276A00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2F3B9C1E01087C00276A00 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0635E01E01433200FE5032 /* WSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTabBarController.h; sourceTree = "<group>"; };
+		CE0635E11E01433200FE5032 /* WSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTabBarController.m; sourceTree = "<group>"; };
+		CE0635E41E01448A00FE5032 /* note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = note.m; sourceTree = "<group>"; };
+		CE0635E51E01454F00FE5032 /* WSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTabBar.h; sourceTree = "<group>"; };
+		CE0635E61E01454F00FE5032 /* WSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTabBar.m; sourceTree = "<group>"; };
+		CE0635E81E01636E00FE5032 /* WSTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTabBarButton.h; sourceTree = "<group>"; };
+		CE0635E91E01636E00FE5032 /* WSTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTabBarButton.m; sourceTree = "<group>"; };
 		CE2F3B661E00F14A00276A00 /* 网易彩票2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易彩票2016.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2F3B6A1E00F14A00276A00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2F3B6C1E00F14A00276A00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		CE2F3B6D1E00F14A00276A00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		CE2F3B6F1E00F14A00276A00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../ViewController.h; sourceTree = "<group>"; };
-		CE2F3B701E00F14A00276A00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../ViewController.m; sourceTree = "<group>"; };
 		CE2F3B731E00F14A00276A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE2F3B7A1E00F14A00276A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2F3B9C1E01087C00276A00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		CE2F3B5D1E00F14A00276A00 = {
 			isa = PBXGroup;
 			children = (
+				CE0635E41E01448A00FE5032 /* note.m */,
 				CE2F3B681E00F14A00276A00 /* 网易彩票2016 */,
 				CE2F3B671E00F14A00276A00 /* Products */,
 			);
@@ -254,8 +262,8 @@
 		CE2F3B961E00F8E800276A00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE2F3B6F1E00F14A00276A00 /* ViewController.h */,
-				CE2F3B701E00F14A00276A00 /* ViewController.m */,
+				CE0635E01E01433200FE5032 /* WSTabBarController.h */,
+				CE0635E11E01433200FE5032 /* WSTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +279,10 @@
 			isa = PBXGroup;
 			children = (
 				CE2F3B721E00F14A00276A00 /* Main.storyboard */,
+				CE0635E81E01636E00FE5032 /* WSTabBarButton.h */,
+				CE0635E91E01636E00FE5032 /* WSTabBarButton.m */,
+				CE0635E51E01454F00FE5032 /* WSTabBar.h */,
+				CE0635E61E01454F00FE5032 /* WSTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,9 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2F3B711E00F14A00276A00 /* ViewController.m in Sources */,
+				CE0635E21E01433200FE5032 /* WSTabBarController.m in Sources */,
 				CE2F3B6E1E00F14A00276A00 /* AppDelegate.m in Sources */,
+				CE0635EA1E01636E00FE5032 /* WSTabBarButton.m in Sources */,
 				CE2F3B6B1E00F14A00276A00 /* main.m in Sources */,
+				CE0635E71E01454F00FE5032 /* WSTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +525,7 @@
 				CE2F3B7F1E00F14A00276A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

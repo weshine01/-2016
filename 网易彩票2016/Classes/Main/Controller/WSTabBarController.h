@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WSTabBarController.h
 //  网易彩票2016
 //
 //  Created by user on 2016/12/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WSTabBarController : UITabBarController
 
 @end
-
